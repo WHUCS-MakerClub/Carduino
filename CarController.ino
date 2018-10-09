@@ -43,7 +43,7 @@ void wheel_run( int *wheel, int spd){
     }
     else if( spd <= 0 && spd >= -255){  // 如果传入速度值小于0，轮反转
         analogWrite( wheel[0], 0);
-        analogWrite( wheel[1], spd);
+        analogWrite( wheel[1], -spd);
     }
     // 处理大于255的输入值？    
 }
@@ -59,8 +59,8 @@ void go_ahead( int spd ){ //？
 }
 
 void go_back( int spd ){ //？
-    wheel_run( wheel_L, spd );
-    wheel_run( wheel_R, spd );
+    wheel_run( wheel_L, -spd );
+    wheel_run( wheel_R, -spd );
 }
 
 void turn_left( int spd ){ //
