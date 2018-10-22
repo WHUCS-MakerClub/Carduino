@@ -46,39 +46,39 @@ void loop(){
 
 // 定义直行函数
 void go_ahead(){
-    analogWrite( wheel_L_1, 200);
-    analogWrite( wheel_L_2, 0);
-    analogWrite( wheel_R_1, 200);
-    analogWrite( wheel_R_2, 0);
+    digitalWrite( wheel_L_1, HIGH);
+    digitalWrite( wheel_L_2, LOW;
+    digitalWrite( wheel_R_1, HIGH);
+    digitalWrite( wheel_R_2, LOW);
 }
 
 // 定义后退函数
 void go_back(){
-    analogWrite( wheel_L_1, 0);
-    analogWrite( wheel_L_2, 200);
-    analogWrite( wheel_R_1, 0);
-    analogWrite( wheel_R_2, 200);
+    digitalWrite( wheel_L_1, LOW);
+    digitalWrite( wheel_L_2, HIGH;
+    digitalWrite( wheel_R_1, LOW);
+    digitalWrite( wheel_R_2, HIGH);
 }
 
 // 定义左转函数
 void turn_left(){
-    analogWrite( wheel_L_1, 0);
-    analogWrite( wheel_L_2, 0);
-    analogWrite( wheel_R_1, 200);
-    analogWrite( wheel_R_2, 0);
+    digitalWrite( wheel_L_1, LOW);
+    digitalWrite( wheel_L_2, LOW;
+    digitalWrite( wheel_R_1, HIGH);
+    digitalWrite( wheel_R_2, LOW);
 }
 
 // 定义右转函数
 void turn_right(){
-    analogWrite( wheel_L_1, 200);
-    analogWrite( wheel_L_2, 0);
-    analogWrite( wheel_R_1, 0);
-    analogWrite( wheel_R_2, 0);
+    digitalWrite( wheel_L_1, HIGH);
+    digitalWrite( wheel_L_2, LOW;
+    digitalWrite( wheel_R_1, LOW);
+    digitalWrite( wheel_R_2, LOW);
 }
 
 void stop(){
-    analogWrite( wheel_L_1, 0);
-    analogWrite( wheel_L_2, 0);
-    analogWrite( wheel_R_1, 0);
-    analogWrite( wheel_R_2, 0);
+    digitalWrite( wheel_L_1, LOW);
+    digitalWrite( wheel_L_2, LOW;
+    digitalWrite( wheel_R_1, LOW);
+    digitalWrite( wheel_R_2, LOW);
 }
